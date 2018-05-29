@@ -1,0 +1,26 @@
+{
+    "name": "vib94/vib-sfsecurity",
+    "description": "Security default bundle for Symfony",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Vincent Baron"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vib\\SFSecurity\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "srcVib2/{$name}": ["vendor/package"]
+        }
+    }
+}
